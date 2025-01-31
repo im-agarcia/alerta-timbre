@@ -51,7 +51,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Hola! Compartime info para responderte</h1>
+            <h1>Hola! El timbre no funciona, compartime info para atenderte</h1>
             <form onSubmit={handleSubmit}>
                 <div>
                     <input
