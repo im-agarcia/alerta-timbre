@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .App {
@@ -88,5 +88,38 @@ p.error {
 
   button {
       font-size: 0.9rem;
+  }
+}
+
+/* Estilos para el mensaje emergente */
+.message-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 2.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-20px);
+  }
+  10% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+  }
+  90% {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-20px);
   }
 }
