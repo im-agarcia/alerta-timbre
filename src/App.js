@@ -23,11 +23,12 @@ function App() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        if (!name || !phone) {
-            setMessage('Por favor, ingresa tu nombre y teléfono.');
+
+         if (!name) {
+            setMessage('Sin nombre no se puede');
             setShowMessage(true); // Muestra el mensaje
             return;
-        }
+        } 
 
         try {
             const response = await axios.post(

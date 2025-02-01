@@ -71,7 +71,7 @@ button:hover {
 p {
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: green;
+  color: rgb(254, 255, 254);
 }
 
 p.error {
